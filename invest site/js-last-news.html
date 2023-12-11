@@ -1,0 +1,5 @@
+$(document).ready(function(){ checkNews(); setInterval(function(){ checkNews();
+}, 60000); }); function checkNews(){ let newCnt = 15; let objMenuNews =
+$('.menu-li-news'); if(newCnt > 0 && objMenuNews.length > 0){
+if(objMenuNews.children('.badge-count').length === 0){ objMenuNews.append(' +' +
+newCnt + ''); } } }
